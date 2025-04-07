@@ -1,0 +1,107 @@
+/* Remove scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Body styles */
+body {
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 100%,
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/backdrop.jpeg") center/cover fixed no-repeat;
+  height: 100vh;
+}
+
+/* Text colors */
+.text-light-yellow {
+  color: #ead196 !important;
+}
+
+/* Navbar links */
+.nav-link:hover,
+.navbar-brand:hover {
+  color: red;
+}
+
+.rm-logo-font {
+  font-family: "Simplicity Extend";
+  letter-spacing: 1px;
+}
+
+/* Typewriter animation */
+.typewriter h5 {
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+/* Heading styles */
+.title-heading,
+.sub-title-heading {
+  font-family: "IM FELL English" !important;
+  letter-spacing: 4px;
+  color: red;
+}
+
+.title-heading {
+  font-size: 8em;
+}
+
+/* Image styles */
+img {
+  width: 75%;
+}
+
+/* Table styles */
+th,
+tr,
+td {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: #ead196 !important;
+  border-color: #ead196 !important;
+}
+
+/* Font styles */
+.rubik-80s {
+  font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 400;
+  color: #ead196;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+/* IM FELL Font */
+@font-face {
+  font-family: "IM FELL English";
+  src: url(../fonts/IMFellEnglish-Regular.ttf);
+}
+@font-face {
+  font-family: "Simplicity Extend";
+  src: url(../fonts/simplicity-extend\ regular.ttf);
+}
